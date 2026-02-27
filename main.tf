@@ -56,7 +56,6 @@ resource "azurerm_linux_virtual_machine" "example" {
     azurerm_network_interface.example.id,
   ]
 
-  }
 
   os_disk {
     caching              = "ReadWrite"
@@ -69,3 +68,4 @@ resource "azurerm_linux_virtual_machine" "example" {
     sku       = "22_04-lts"
     version   = "latest"
   }
+} 
